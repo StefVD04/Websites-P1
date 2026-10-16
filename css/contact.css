@@ -1,0 +1,74 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:scroll;
+    background-image: url(/img/achtergrond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 6, 6);
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: darkred;
+}
+
+    .contact-balk {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000000;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 15px 20px;
+            box-sizing: border-box;
+            z-index: 9999;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .contact-balk a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .contact-balk a:hover {
+            opacity: 0.6;
+        }
+
+        body {
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 480px) {
+            .contact-balk {
+                gap: 15px;
+                font-size: 12px;
+                padding: 15px 10px;
+            }
+        }

@@ -1,0 +1,98 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:scroll;
+    background-image: url(/img/achtergrond.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(6, 6, 6);
+
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: darkred;
+}
+
+div{
+ 
+    
+}
+
+.fotoik{
+    height: 400px;
+    float: right;
+}
+h1{
+    color: white;
+}
+
+.eerstep{
+    text-align: left;
+    padding-right: 500px;
+    color: white;
+    
+}
+
+.interesses{
+    text-align: right;
+    padding-right: 100px;
+    color: white;
+}
+
+.tweedep{
+    text-align: right;
+    padding-left: 900px;
+    color: white;
+}
+
+.fotofw{
+    height: 400px;
+    float: left;
+}
+
+.hobby{
+    color: white;
+}
+
+.derdep{
+    color: white;
+}
+
+.knoph{
+    border: 2px solid black;
+    background-color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white
+}
+
+.studie{
+    text-align: right;
+    color: white;
+
+}
+
+.vierdep{
+    color: white;
+    text-align: right;
+    padding-left: 500px;
+}
