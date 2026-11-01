@@ -1,43 +1,413 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1</title>
-    <link rel="stylesheet" type="text/CSS" href="/css/ervaring.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Ervaring | Mijn persoonlijke website</title>
+    <meta name="description"
+          content="Ontdek mijn werkervaring als bewakingsagent, voetbaltrainer, jobstudent en vrijwillige brandweerman.">
+
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap 5 CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="/css/ervaring.css">
 </head>
+
 <body>
-    
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaringen</a></li>
-        <li><a href="hobby.html">Hobby's</a> </li>
-        <li><a href="contact.html">Contact</a> </li>
-    </ul>
-    <h2>Bewakingsagent</h2>
-    <p>Ik heb 3 jaar gewerkt als bewakingsagent bij het bedrijf Maat Security. Hierdoor heb ik veel geleerd over mensen lezen en hoe ik ermee moet omgaan. <br>Ook heb ik veel mails en telefoontjes moeten doen.
-        Daarnaast heb ik veel gesocialiseerd en leren luisteren naar verschillende kanten van een verhaal. <br>Tot slot heeft het me harder gemaakt als persoon en geleerd om mensen niet over me heen te laten lopen.
-    </p>
 
-    <h2>Voetbal(trainer)</h2>
+    <!-- Navigatie -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+        <div class="container">
 
-    <p>Door de voetbal heb ik geleerd om in teamverband te werken en sociaal te worden omdat ik het al sinds mijn 4 doe.
-        <br> Van voetbaltrainer heb ik geleerd dat het niet altijd even simpel gaat dan dat je zelf denkt. Soms slaagt het wat tegen maar dan moet je je team en vooral jezelf terug de juiste mindset geven en gewoon blijven door proberen.
-        <br>Ookal slaagt het even tegen, erna gaat het altijd weer goed en dan is winnen nog leuker.
-    </p>
+            <a class="navbar-brand fw-bold" href="index.html">
+                Mijn website
+            </a>
 
-    <h2>Studentenjobs</h2>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Navigatie openen"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <p>Bij mijn studentenjobs heb ik vooral leren luisteren naar de baas wat ik moet doen. En als het niet meteen lukt, moet je eerst zelf eens proberen inplaats van meteen raad te gaan vragen.</p>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
 
-    <h2>Brandweerman</h2>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
 
-    <p>Als brandweerman heb ik leren werken onder een enorme druk en hoe ik hiermee moet omgaan. Ook heeft het me nog meer geholpen met werken in teamverband.</p>
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           aria-current="page"
+                           href="ervaring.html">Ervaring</a>
+                    </li>
 
-    </body>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hobby.html">Hobby's</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Introductie -->
+        <header class="experience-hero py-5">
+            <div class="container text-center">
+
+                <span class="section-label">Mijn loopbaan</span>
+
+                <h1 class="display-4 fw-bold mt-2">
+                    Mijn ervaring
+                </h1>
+
+                <p class="lead text-secondary mx-auto hero-text">
+                    Door mijn verschillende jobs en engagementen heb ik
+                    geleerd om verantwoordelijkheid te nemen, samen te werken
+                    en rustig te blijven onder druk.
+                </p>
+
+                <a href="#ervaringen" class="btn btn-primary mt-3">
+                    Ontdek mijn ervaring
+                </a>
+
+            </div>
+        </header>
+
+        <!-- Ervaringen -->
+        <section class="py-5" id="ervaringen">
+            <div class="container">
+
+                <div class="section-intro text-center mb-5">
+                    <span class="section-label">Wat ik geleerd heb</span>
+                    <h2 class="section-title">Mijn ervaringen</h2>
+                    <p class="text-secondary">
+                        Elke ervaring heeft bijgedragen aan mijn persoonlijke
+                        ontwikkeling.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <!-- Bewakingsagent -->
+                    <div class="col-md-6">
+                        <article class="experience-card h-100">
+
+                            <div class="experience-icon">
+                                <span aria-hidden="true">&#128737;</span>
+                            </div>
+
+                            <span class="experience-period">
+                                2023 – 2026
+                            </span>
+
+                            <h3>Bewakingsagent</h3>
+
+                            <p>
+                                Ik heb drie jaar gewerkt als bewakingsagent
+                                bij Maat Security. Hierdoor heb ik veel geleerd
+                                over mensen inschatten en op verschillende
+                                situaties reageren.
+                            </p>
+
+                            <p>
+                                Ik heb ook ervaring opgedaan met het versturen
+                                van e-mails en het voeren van telefoongesprekken.
+                                Daarnaast heb ik geleerd om goed te luisteren
+                                en verschillende kanten van een verhaal te
+                                begrijpen.
+                            </p>
+
+                            <p>
+                                Deze job heeft mij zelfstandiger en
+                                assertiever gemaakt. Ik heb geleerd om voor
+                                mezelf op te komen en professioneel met
+                                anderen om te gaan.
+                            </p>
+
+                            <div class="skills">
+                                <span class="skill-badge">Communicatie</span>
+                                <span class="skill-badge">Zelfstandigheid</span>
+                                <span class="skill-badge">Assertiviteit</span>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Voetbal en trainer -->
+                    <div class="col-md-6">
+                        <article class="experience-card h-100">
+
+                            <div class="experience-icon">
+                                <span aria-hidden="true">&#9917;</span>
+                            </div>
+
+                            <span class="experience-period">
+                                Sinds mijn vierde
+                            </span>
+
+                            <h3>Voetbal en voetbaltrainer</h3>
+
+                            <p>
+                                Door voetbal heb ik geleerd om in teamverband
+                                te werken en sociaal te zijn. Ik speel al
+                                voetbal sinds mijn vierde.
+                            </p>
+
+                            <p>
+                                Als voetbaltrainer heb ik geleerd dat niet
+                                alles altijd verloopt zoals je verwacht.
+                                Wanneer het tegenzit, is het belangrijk om
+                                zowel jezelf als je team opnieuw te motiveren
+                                en te blijven proberen.
+                            </p>
+
+                            <p>
+                                Ik heb ontdekt hoe belangrijk doorzettingsvermogen
+                                en een positieve mindset zijn. Na een moeilijke
+                                periode voelt een overwinning extra goed.
+                            </p>
+
+                            <div class="skills">
+                                <span class="skill-badge">Teamwork</span>
+                                <span class="skill-badge">Motivatie</span>
+                                <span class="skill-badge">Doorzettingsvermogen</span>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Studentenjobs -->
+                    <div class="col-md-6">
+                        <article class="experience-card h-100">
+
+                            <div class="experience-icon">
+                                <span aria-hidden="true">&#128188;</span>
+                            </div>
+
+                            <span class="experience-period">
+                                Studentenwerk
+                            </span>
+
+                            <h3>Studentenjobs</h3>
+
+                            <p>
+                                Tijdens mijn studentenjobs heb ik geleerd
+                                om aandachtig te luisteren naar instructies
+                                en opdrachten correct uit te voeren.
+                            </p>
+
+                            <p>
+                                Wanneer iets niet meteen lukt, probeer ik
+                                eerst zelfstandig een oplossing te vinden.
+                                Als ik er zelf niet uit raak, vraag ik
+                                natuurlijk om hulp.
+                            </p>
+
+                            <p>
+                                Deze ervaringen hebben mij zelfstandiger,
+                                verantwoordelijker en flexibeler gemaakt.
+                            </p>
+
+                            <div class="skills">
+                                <span class="skill-badge">Zelfstandigheid</span>
+                                <span class="skill-badge">Flexibiliteit</span>
+                                <span class="skill-badge">Verantwoordelijkheid</span>
+                            </div>
+
+                        </article>
+                    </div>
+
+                    <!-- Brandweer -->
+                    <div class="col-md-6">
+                        <article class="experience-card h-100">
+
+                            <div class="experience-icon">
+                                <span aria-hidden="true">&#128293;</span>
+                            </div>
+
+                            <span class="experience-period">
+                                Sinds 2025
+                            </span>
+
+                            <h3>Vrijwillige brandweerman</h3>
+
+                            <p>
+                                Als vrijwillige brandweerman heb ik geleerd
+                                om onder hoge druk te werken en in moeilijke
+                                situaties zo rustig mogelijk te blijven.
+                            </p>
+
+                            <p>
+                                Teamwork is hierbij erg belangrijk.
+                                Je moet op je collega's kunnen vertrouwen,
+                                duidelijk communiceren en samen naar een
+                                oplossing werken.
+                            </p>
+
+                            <p>
+                                Deze ervaring heeft mijn verantwoordelijkheidsgevoel
+                                versterkt en mij geleerd hoe belangrijk
+                                samenwerking en vertrouwen zijn.
+                            </p>
+
+                            <div class="skills">
+                                <span class="skill-badge">Stressbestendigheid</span>
+                                <span class="skill-badge">Teamwork</span>
+                                <span class="skill-badge">Verantwoordelijkheid</span>
+                            </div>
+
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Vaardigheden -->
+        <section class="skills-section py-5">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="section-label">Persoonlijke groei</span>
+                    <h2 class="section-title">
+                        Wat ik heb geleerd
+                    </h2>
+                </div>
+
+                <div class="row g-3">
+
+                    <div class="col-6 col-lg-3">
+                        <div class="strength-card">
+                            <span class="strength-icon" aria-hidden="true">
+                                &#129309;
+                            </span>
+                            <h3>Teamwork</h3>
+                            <p>
+                                Samenwerken en vertrouwen op anderen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="strength-card">
+                            <span class="strength-icon" aria-hidden="true">
+                                &#127919;
+                            </span>
+                            <h3>Initiatief</h3>
+                            <p>
+                                Zelf oplossingen zoeken en actie ondernemen.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="strength-card">
+                            <span class="strength-icon" aria-hidden="true">
+                                &#128170;
+                            </span>
+                            <h3>Doorzetting</h3>
+                            <p>
+                                Blijven proberen wanneer iets moeilijk wordt.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-lg-3">
+                        <div class="strength-card">
+                            <span class="strength-icon" aria-hidden="true">
+                                &#129504;
+                            </span>
+                            <h3>Stressbestendigheid</h3>
+                            <p>
+                                Rustig blijven en nadenken onder druk.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="py-5">
+            <div class="container">
+
+                <div class="contact-card text-center">
+                    <h2 class="section-title">
+                        Meer weten over mij?
+                    </h2>
+
+                    <p class="text-secondary">
+                        Bekijk mijn CV of neem contact met mij op.
+                    </p>
+
+                    <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+                        <a href="cv.html" class="btn btn-primary">
+                            Bekijk mijn CV
+                        </a>
+
+                        <a href="contact.html"
+                           class="btn btn-outline-primary">
+                            Contact opnemen
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer py-4">
+        <div class="container text-center">
+            <p class="fw-semibold mb-1">
+                Mijn persoonlijke website
+            </p>
+
+            <p class="small mb-0">
+                <a href="index.html">Home</a>
+                <span aria-hidden="true"> · </span>
+                <a href="cv.html">CV</a>
+                <span aria-hidden="true"> · </span>
+                <a href="hobby.html">Hobby's</a>
+                <span aria-hidden="true"> · </span>
+                <a href="contact.html">Contact</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
 </html>

@@ -1,81 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1</title>
-    <link rel="stylesheet" type="text/CSS" href="/css/hobby.css">
+
+    <title>Mijn hobby's</title>
+    <meta name="description" content="Ontdek mijn hobby's: voetbal, fietsen, brandweer en fitness.">
+
     <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 
+    <!-- Bootstrap 5 -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
+    <!-- Eigen CSS -->
+    <link rel="stylesheet" href="/css/hobby.css">
 </head>
+
 <body>
-    
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cv.html">CV</a></li>
-        <li><a href="ervaring.html">Ervaringen</a></li>
-        <li><a href="hobby.html">Hobby's</a> </li>
-        <li><a href="contact.html">Contact</a> </li>
-    </ul>
 
-<h1>Hobby's</h1>
-<img class="fotovoet" src="/img/voetbal.png" alt="voetbal" title="Voetbal">
-<h2>Voetbal</h2>
+    <!-- Navigatie -->
+    <nav class="navbar navbar-expand-lg navbar-dark site-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Mijn website</a>
 
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Navigatie openen of sluiten"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<p class="voetbal" >Ik voetbal al sinds mijn 4 jaar bij KON Vlimmeren Sport. Voetbal is een sport die ik heel graag doe. Ik vind het leuk om samen met mijn ploeg te trainen en wedstrijden te spelen. Door te voetballen leer ik samenwerken, doorzetten en als team sterker te worden. 
-   Ook is de ploegsfeer perfect bij Vlimmeren, we doen regelmatig teambuildings, en elke maand eten we 2 keer na een training samen in de kantine.
-    Ik beleef veel plezier aan deze sport en hoop nog veel jaren bij KON Vlimmeren Sport te kunnen voetballen.</p>
-<br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ervaring.html">Ervaring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="hobby.html" aria-current="page">Hobby's</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
- <h2 class="fietsen" >Fietsen</h2>   
+    <main>
+        <!-- Introductie -->
+        <section class="hero-section">
+            <div class="container">
+                <span class="section-label">Vrije tijd</span>
+                <h1>Mijn hobby's</h1>
+                <p>
+                    In mijn vrije tijd ben ik graag actief bezig.
+                    Sport, teamwork en plezier maken spelen daarbij een belangrijke rol.
+                    Hieronder ontdek je welke hobby's ik graag doe.
+                </p>
+            </div>
+        </section>
 
- <p class="fietsp" >Ik ga twee keer per week fietsen met mijn vrienden. We doen dit omdat we het leuk vinden om samen sportief bezig te zijn en plezier te maken. 
-    In de zomer fietsen we meestal op de weg, terwijl we in de winter met onze mountainbikes de bossen intrekken. 
-    Zo kunnen we het hele jaar door blijven fietsen en genieten van de natuur. Het is voor ons een leuke manier om aan onze conditie te werken en samen tijd door te brengen.
-    Achteraf gaan we natuurlijk ook nog iets drinken.</p>
+        <!-- Hobby's -->
+        <section class="hobbies-section">
+            <div class="container">
 
-    <img class="fotobrand" src="/img/brand.jpeg" alt="brandweer" title="Brandweer">
+                <!-- Voetbal -->
+                <article class="hobby-card row g-0 align-items-center">
+                    <div class="col-lg-5">
+                        <img
+                            class="hobby-image"
+                            src="/img/voetbal.png"
+                            alt="Voetbal"
+                            loading="lazy"
+                        >
+                    </div>
 
-  <h2>Brandweer</h2>  
+                    <div class="col-lg-7">
+                        <div class="hobby-content">
+                            <span class="hobby-number">01</span>
+                            <h2>Voetbal</h2>
+                            <p>
+                                Ik voetbal al sinds mijn vierde bij KON Vlimmeren Sport.
+                                Voetbal is een sport die ik heel graag doe. Ik vind het
+                                leuk om samen met mijn ploeg te trainen en wedstrijden
+                                te spelen. Door te voetballen leer ik samenwerken,
+                                doorzetten en als team sterker te worden.
+                            </p>
+                            <p>
+                                Ook de ploegsfeer bij Vlimmeren is perfect. We doen
+                                regelmatig teambuildings en eten na een training
+                                regelmatig samen in de kantine. Ik beleef veel plezier
+                                aan deze sport en hoop nog veel jaren bij
+                                KON Vlimmeren Sport te kunnen voetballen.
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
+                <!-- Fietsen -->
+                <article class="hobby-card row g-0 align-items-center">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="hobby-content">
+                            <span class="hobby-number">02</span>
+                            <h2>Fietsen</h2>
+                            <p>
+                                Ik ga twee keer per week fietsen met mijn vrienden.
+                                We doen dit omdat we het leuk vinden om samen sportief
+                                bezig te zijn en plezier te maken.
+                            </p>
+                            <p>
+                                In de zomer fietsen we meestal op de weg, terwijl we
+                                in de winter met onze mountainbikes de bossen intrekken.
+                                Zo kunnen we het hele jaar door blijven fietsen en
+                                genieten van de natuur. Het is voor ons een leuke
+                                manier om aan onze conditie te werken en samen tijd
+                                door te brengen. Achteraf gaan we natuurlijk ook
+                                nog iets drinken.
+                            </p>
+                        </div>
+                    </div>
 
- <p class="brandweer" >Ik ben vrijwilliger bij de brandweer en zie dit ook een beetje als een hobby. 
-    Wat ik er zo leuk aan vind, is dat de sfeer binnen de groep heel goed zit. 
-    We kunnen altijd lachen met elkaar en hebben veel plezier, ook buiten de interventies. 
-    Toch is de brandweer veel meer dan alleen branden blussen. We helpen mensen in verschillende noodsituaties en staan klaar voor iedereen die onze hulp nodig heeft. Dat geeft veel voldoening.
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="image-placeholder">
+                            <div class="image-placeholder-content">
+                                <span class="placeholder-icon">🚴</span>
+                                <p>Op de weg en in de natuur</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-Hoewel we als groep veel plezier maken, verandert alles zodra de pieper afgaat. Op dat moment zetten we alles opzij en werken we samen als één team met één taak. 
-Iedereen weet wat hij moet doen en we vertrouwen op elkaar om het probleem zo snel en veilig mogelijk op te lossen. Voor mij is dat net wat de brandweer zo bijzonder maakt: de goede sfeer, de vriendschap en het samen klaarstaan om anderen te helpen.</p> 
+                <!-- Brandweer -->
+                <article class="hobby-card row g-0 align-items-center">
+                    <div class="col-lg-5">
+                        <img
+                            class="hobby-image"
+                            src="/img/brand.jpeg"
+                            alt="Brandweer"
+                            loading="lazy"
+                        >
+                    </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="col-lg-7">
+                        <div class="hobby-content">
+                            <span class="hobby-number">03</span>
+                            <h2>Brandweer</h2>
+                            <p>
+                                Ik ben vrijwilliger bij de brandweer en zie dit ook
+                                een beetje als een hobby. Wat ik er zo leuk aan vind,
+                                is dat de sfeer binnen de groep heel goed zit. We kunnen
+                                altijd lachen met elkaar en hebben veel plezier, ook
+                                buiten de interventies.
+                            </p>
+                            <p>
+                                Toch is de brandweer veel meer dan alleen branden
+                                blussen. We helpen mensen in verschillende noodsituaties
+                                en staan klaar voor iedereen die onze hulp nodig heeft.
+                                Dat geeft veel voldoening.
+                            </p>
+                            <p>
+                                Hoewel we als groep veel plezier maken, verandert
+                                alles zodra de pieper afgaat. Op dat moment zetten we
+                                alles opzij en werken we samen als één team met één
+                                taak. Iedereen weet wat hij moet doen en we vertrouwen
+                                op elkaar om het probleem zo snel en veilig mogelijk
+                                op te lossen.
+                            </p>
+                            <p>
+                                Voor mij is dat net wat de brandweer zo bijzonder maakt:
+                                de goede sfeer, de vriendschap en het samen klaarstaan
+                                om anderen te helpen.
+                            </p>
+                        </div>
+                    </div>
+                </article>
 
-<h2 class="fitness">Fitness</h2>
+                <!-- Fitness -->
+                <article class="hobby-card row g-0 align-items-center">
+                    <div class="col-lg-7 order-2 order-lg-1">
+                        <div class="hobby-content">
+                            <span class="hobby-number">04</span>
+                            <h2>Fitness</h2>
+                            <p>
+                                Ik ga ongeveer twee keer per week naar de fitness.
+                                Ik vind het leuk om te doen, omdat ik graag sport en
+                                bezig ben met mijn lichaam. Na een training voel ik
+                                me meestal goed en heb ik het gevoel dat ik iets
+                                nuttigs heb gedaan.
+                            </p>
+                            <p>
+                                Fitness helpt mij om fit en gezond te blijven en is
+                                voor mij ook een leuke manier om mijn vrije tijd
+                                door te brengen.
+                            </p>
+                        </div>
+                    </div>
 
-<p class="fitp">Ik ga ongeveer twee keer per week naar de fitness. Ik vind het leuk om te doen, omdat ik graag sport en bezig ben met mijn lichaam. Na een training voel ik me meestal goed en heb ik het gevoel dat ik iets nuttigs heb gedaan. Fitness helpt mij om fit en gezond te blijven en het is voor mij ook een leuke manier om mijn vrije tijd door te brengen.</p>
+                    <div class="col-lg-5 order-1 order-lg-2">
+                        <div class="image-placeholder fitness-placeholder">
+                            <div class="image-placeholder-content">
+                                <span class="placeholder-icon">💪</span>
+                                <p>Werken aan kracht en conditie</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
 
-<table>
-    <tr>
-        <td>Hobby</td>
-        <td>Aantal * per week</td>
-    </tr>
-    <tr>
-        <td>Voetbal</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>Fietsen</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Fitness</td>
-        <td>2</td>
-    </tr>
- 
+            </div>
+        </section>
 
-</table>
+        <!-- Overzicht -->
+        <section class="overview-section">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <span class="section-label">Mijn week</span>
+                    <h2>Hoe vaak sport ik?</h2>
+                    <p>Een overzicht van het aantal keer dat ik per week sport.</p>
+                </div>
 
+                <div class="table-card">
+                    <div class="table-responsive">
+                        <table class="table hobby-table align-middle mb-0">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Hobby</th>
+                                    <th scope="col">Aantal keer per week</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="table-icon">⚽</span>
+                                        Voetbal
+                                    </td>
+                                    <td><span class="frequency-badge">3 keer</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="table-icon">🚴</span>
+                                        Fietsen
+                                    </td>
+                                    <td><span class="frequency-badge">2 keer</span></td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="table-icon">💪</span>
+                                        Fitness
+                                    </td>
+                                    <td><span class="frequency-badge">2 keer</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    </body>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2026 Mijn website. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+</body>
 </html>
